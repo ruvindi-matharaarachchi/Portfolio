@@ -1,7 +1,7 @@
 import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
 import { ProjectCard } from "./ProjectCard";
-import projImg1 from "../assets/img/landpro.png";
-import projImg2 from "../assets/img/project-img2.png";
+import projImg1 from "../assets/img/p1.png";
+import projImg2 from "../assets/img/p2.jpeg";
 import projImg3 from "../assets/img/project-img3.png";
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import 'animate.css';
@@ -12,12 +12,12 @@ export const Projects = () => {
   const projects = [
     {
       title: "Online Land Sales System",
-      description: "Design & Development",
+      description: "User Management System",
       imgUrl: projImg1,
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
+      title: "Online Bidding System",
+      description: "User Mangement System",
       imgUrl: projImg2,
     },
     {
@@ -28,12 +28,12 @@ export const Projects = () => {
     {
       title: "Business Startup",
       description: "Design & Development",
-      imgUrl: projImg2,
+      imgUrl: projImg3,
     },
     {
       title: "Business Startup",
       description: "Design & Development",
-      imgUrl: projImg2,
+      imgUrl: projImg3,
     },
     {
       title: "Business Startup",
