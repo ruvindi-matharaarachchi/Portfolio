@@ -35,23 +35,31 @@ export const Skills = () => {
                 <div className="col-12">
                     <div className="skill-bx wow zoomIn">
                         <h2>Skills</h2>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br></br> Lorem Ipsum has been the industry's standard dummy text.</p>
+                        <p>I have developed a diverse set of technical skills through my studies and hands on projects, <br></br> focusing on programming, mobile and web development, and problem-solving.</p>
                         <Carousel responsive={responsive} infinite={true} className="owl-carousel owl-theme skill-slider">
                             <div className="item">
+                                <img src={meter3} alt="Image" />
+                                <h5>Programming Languages</h5>
+                            </div>
+                            <div className="item">
                                 <img src={meter1} alt="Image" />
+                                <h5>Mobile Application Development</h5>
+                            </div>
+                            <div className="item">
+                                <img src={meter3} alt="Image" />
                                 <h5>Web Development</h5>
                             </div>
                             <div className="item">
                                 <img src={meter2} alt="Image" />
-                                <h5>Brand Identity</h5>
+                                <h5>Database Management</h5>
                             </div>
                             <div className="item">
                                 <img src={meter3} alt="Image" />
-                                <h5>Logo Design</h5>
+                                <h5>Problem Solving & Algorithms</h5>
                             </div>
                             <div className="item">
                                 <img src={meter1} alt="Image" />
-                                <h5>Web Development</h5>
+                                <h5>Project Management & Collaboration</h5>
                             </div>
                         </Carousel>
                     </div>
