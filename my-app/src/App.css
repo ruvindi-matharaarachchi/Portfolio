@@ -114,6 +114,7 @@ nav.navbar a.navbar-brand {
   width: 9%;
 }
 
+/* Styling for navigation links */
 nav.navbar .navbar-nav .nav-link.navbar-link {
   font-weight: 400;
   color: #fff !important;
@@ -121,17 +122,61 @@ nav.navbar .navbar-nav .nav-link.navbar-link {
   padding: 0 25px;
   font-size: 18px;
   opacity: 0.75;
+  transition: color 0.3s ease, background-color 0.3s ease, transform 0.3s ease;
+  position: relative;
 }
 
-nav.navbar .navbar-nav a.nav-link.navbar-link:hover,
-nav.navbar .navbar-nav a.nav-link.navbar-link.active {
+/* Hover animation for navigation links */
+nav.navbar .navbar-nav a.nav-link.navbar-link:hover {
   opacity: 1;
+  color: #00d4ff !important; /* Highlighted color for contrast */
+  transform: translateY(-2px); /* Slight upward movement on hover */
 }
 
+
+
+/* Add underline effect on hover */
+nav.navbar .navbar-nav a.nav-link.navbar-link:hover::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: #00d4ff;
+  border-radius: 1px;
+  transition: width 0.3s ease-in-out;
+}
+
+nav.navbar .navbar-nav a.nav-link.navbar-link::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background: #00d4ff;
+  border-radius: 1px;
+  transition: width 0.3s ease-in-out;
+}
+
+/* Styling for navbar text */
 span.navbar-text {
   display: flex;
   align-items: center;
+  font-size: 16px;
+  color: #ffffff;
+  opacity: 0.9;
+  transition: opacity 0.3s ease, transform 0.3s ease;
 }
+
+/* Navbar text hover effect */
+span.navbar-text:hover {
+  opacity: 1;
+  transform: scale(1.1); /* Slight zoom effect */
+  color: #ffcc00;
+}
+
 
 .social-icon {
   display: inline-block;
@@ -278,17 +323,48 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   background-repeat: no-repeat;
 }
 
+/* Updated .banner .tagline with animation and advanced UI */
 .banner .tagline {
   font-weight: 700;
   letter-spacing: 0.8px;
   padding: 8px 10px;
-  background: linear-gradient(90.21deg, rgba(0, 0, 128, 0.8) -5.91%, rgba(1, 65, 1, 0.8) 111.58%);
+  background: linear-gradient(90.21deg, rgba(0, 0, 64, 0.9) -5.91%, rgba(0, 212, 255, 0.8) 111.58%);
   border: 1px solid rgba(17, 7, 112, 0.5);
   font-size: 20px;
-  border-radius: 12px; 
+  border-radius: 12px;
   margin-bottom: 16px;
   display: inline-block;
+  color: white;
+  text-align: center;
+
+  /* Add glowing effect */
+  box-shadow: 0 0 10px rgba(0, 0, 128, 0.8), 0 0 20px rgba(19, 110, 163, 0.8);
+
+  animation: pulse 2s infinite ease-in-out;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 10px rgba(0, 0, 128, 0.8), 0 0 20px rgba(22, 143, 199, 0.8);
+    transform: scale(1);
+  }
+  50% {
+    box-shadow: 0 0 20px rgba(0, 0, 128, 1), 0 0 40px rgb(14, 155, 165);
+    transform: scale(1.05);
+  }
+  100% {
+    box-shadow: 0 0 10px rgba(0, 0, 128, 0.8), 0 0 20px rgba(12, 89, 161, 0.8);
+    transform: scale(1);
+  }
+}
+
+/* Hover effect */
+.banner .tagline:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 25px rgba(0, 0, 128, 1), 0 0 50px rgba(1, 65, 1, 1);
+}
+
 
 
 .banner h1 {
@@ -296,6 +372,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   font-weight: 700;
   letter-spacing: 0.8px;
   line-height: 1;
+  margin-top: 30px;
   margin-bottom: 20px;
   display: block;
 }
@@ -453,7 +530,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   position: absolute;
   width: 0;
   height: 100%;
-  background: linear-gradient(90.21deg, rgba(0, 0, 128, 0.8) -5.91%, rgba(1, 65, 1, 0.8) 111.58%);
+  background: linear-gradient(90.21deg, rgba(0, 0, 64, 0.9) -5.91%, rgba(0, 212, 255, 0.8) 111.58%);
   top: 0;
   left: 0;
   z-index: -1;
@@ -492,7 +569,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 .proj-imgbx::before {
   content: "";
-  background: linear-gradient(90.21deg, rgba(1, 1, 73, 0.822) -5.91%, rgba(1, 65, 1, 0.8) 111.58%);
+  background: linear-gradient(90.21deg, rgba(0, 0, 64, 0.9) -5.91%, rgba(0, 212, 255, 0.8) 111.58%);
   opacity: 0.85;
   position: absolute;
   width: 100%;
@@ -545,7 +622,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 /************ Projects Css ************/
 .contact {
-  background: linear-gradient(90.21deg, rgba(0, 0, 128, 0.8) -5.91%, rgba(1, 65, 1, 0.8) 111.58%);
+  background: linear-gradient(90.21deg, rgba(0, 0, 64, 0.9) -5.91%, rgba(0, 212, 255, 0.8) 111.58%);
   padding: 60px 0 200px 0;
 }
 
@@ -630,90 +707,3 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   width: 100%;
 }
 
-/************ Footer Css ************/
-.footer {
-  padding: 0 0 50px 0;
-  background-image: url('./assets/img/footer-bg.png');
-  background-position: center center;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-.newsletter-bx {
-  background: #FFFFFF;
-  border-radius: 55px;
-  color: #121212;
-  padding: 85px 125px;
-  margin-bottom: 80px;
-  margin-top: -122px;
-}
-
-.newsletter-bx h3 {
-  font-weight: 700;
-  letter-spacing: 0.5px;
-  line-height: 1.2em;
-}
-
-.new-email-bx {
-  background: #fff;
-  padding: 5px;
-  border-radius: 20px;
-  position: relative;
-  z-index: 0;
-  display: flex;
-  align-items: center;
-}
-
-.new-email-bx::before {
-  content: "";
-  background: linear-gradient(90.21deg, rgba(0, 0, 128, 0.8) -5.91%, rgba(1, 65, 1, 0.8) 111.58%);
-  border-radius: 20px;
-  position: absolute;
-  z-index: -1;
-  top: -1px;
-  left: -1px;
-  bottom: -1px;
-  right: -1px;
-}
-
-.new-email-bx::after {
-  content: "";
-  background: #fff;
-  border-radius: 20px;
-  position: absolute;
-  z-index: -1;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-}
-
-.new-email-bx input {
-  width: 100%;
-  color: #121212;
-  font-weight: 500;
-  background: transparent;
-  border: 0;
-  padding: 0 15px;
-}
-
-.new-email-bx button {
-  background: linear-gradient(90.21deg, rgba(0, 0, 128, 0.8) -5.91%, rgba(1, 65, 1, 0.8) 111.58%);
-  padding: 20px 65px;
-  color: #fff;
-  font-weight: 500;
-  letter-spacing: 0.5px;
-  border-radius: 18px;
-}
-
-.footer img {
-  width: 26%;
-}
-
-.footer p {
-  font-weight: 400;
-  font-size: 14px;
-  color: #B8B8B8;
-  letter-spacing: 0.5px;
-  margin-top: 20px;
-}
