@@ -5,7 +5,8 @@ import projImg2 from "../assets/img/p2.jpeg";
 import projImg3 from "../assets/img/p3.jpeg";
 import projImg4 from "../assets/img/p4.jpg";
 import projImg5 from "../assets/img/p5.jpg";
-import colorSharp2 from "../assets/img/color-sharp2.png";
+import projImg6 from "../assets/img/p6.jpg";
+import colorSharp2 from "../assets/img/s2.jpeg";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
 
@@ -40,7 +41,7 @@ export const Projects = () => {
     {
       title: "Medicare",
       description: "Flutter, Shareable medical profile",
-      imgUrl: projImg3,
+      imgUrl: projImg6,
     },
   ];
 
