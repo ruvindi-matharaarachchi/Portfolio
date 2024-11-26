@@ -197,7 +197,7 @@ span.navbar-text {
   width: 0%;
   height: 100%;
   position: absolute;
-  background-color: #fff;
+  background-color: #ffffff;
   left: 0;
   top: 0;
   z-index: -1;
@@ -270,7 +270,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 /************ Banner Css ************/
 .banner {
-  margin-top: 0;
+  margin-top: -100px;
   padding: 260px 0 100px 0;
   background-image: url('./assets/img/r3.jpeg');
   background-position: top center;
@@ -283,7 +283,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   letter-spacing: 0.8px;
   padding: 8px 10px;
   background: linear-gradient(90.21deg, rgba(0, 0, 139, 0.5) -5.91%, rgba(173, 216, 230, 0.5) 111.58%);
-  border: 1px solid rgba(255, 255, 255, 0.5);
+  border: 1px solid rgba(17, 7, 112, 0.5);
   font-size: 20px;
   border-radius: 12px; 
   margin-bottom: 16px;
@@ -309,7 +309,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 .banner button {
-  color: #fff;
+  color: #ffffff;
   font-weight: 700;
   font-size: 20px;
   margin-top: 60px;
