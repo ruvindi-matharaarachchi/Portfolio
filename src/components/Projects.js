@@ -15,12 +15,12 @@ export const Projects = () => {
   const projects = [
     {
       title: "Online Land Sales System",
-      description: "User Management System",
+      description: "User Management System (PHP)",
       imgUrl: projImg1,
     },
     {
       title: "Online Bidding System",
-      description: "User Mangement System",
+      description: "User Management System (Java))",
       imgUrl: projImg2,
     },
     {
